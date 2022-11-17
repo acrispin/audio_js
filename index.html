@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+  
+<body>
+    <h1>Press the Button</h1>
+  
+    <button onclick="play()">Press Here!</button>
+	
+	<audio id="xyz" src="https://media.geeksforgeeks.org/wp-content/uploads/20190531135120/beep.mp3" preload="auto"></audio>
+  
+    <button onclick="play2()">Press Here 2!</button>
+  
+    <script>
+        function play() {
+            var audio = new Audio(
+'https://media.geeksforgeeks.org/wp-content/uploads/20190531135120/beep.mp3');
+            audio.play();
+        }
+		
+		function play2() {
+            document.getElementById('xyz').play();
+        }
+    </script>
+</body>
+</html>
